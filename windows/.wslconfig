@@ -1,3 +1,4 @@
 [wsl2]
-memory=6GB
-swap=0
+memory=6GB # Limits VM memory in WSL 2 to 6GB
+processors=2 # Makes the WSL 2 VM use two virtual processors
+swap=0 # no swap file(s)

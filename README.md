@@ -192,7 +192,7 @@ powershell.exe -Command 'start https://github.com/settings/ssh/new'
 
 ### Link Git Config Files back to Dotfiles
 
-``bash
+```bash
 #!/bin/zsh
 
 # move from home to dotdir (since configured above)

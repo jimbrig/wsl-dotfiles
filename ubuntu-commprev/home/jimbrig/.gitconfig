@@ -1,0 +1,77 @@
+[user]
+	email = jimmy.briggs@jimbrig.com
+	name = Jimmy Briggs
+	signingKey = 3970755CB8844CDACB681B4C0917266E974D7790
+	autocrlf = input
+
+[github]
+	user = jimbrig
+
+[default]
+	protocol = ssh
+
+[gpg]
+	program = /usr/bin/gpg
+
+[init]
+	defaultBranch = main
+
+[commit]
+	gpgSign = true
+
+[tag]
+	forceSignAnnotated = true
+
+[core]
+	editor = code-insiders --wait --new-window
+	excludesfile = ~/.gitignore_global
+  attributesfile = ~/.gitattributes_global
+
+[diff]
+	tool = code-insiders
+	renames = copies
+
+[difftool "code-insiders"]
+	cmd = code-insiders --wait --diff $LOCAL $REMOTE
+
+[merge]
+	tool = code-insiders
+	# Include summaries of merged commits in newly created merge commit messages
+	log = true
+
+[mergetool "code-insiders"]
+	cmd = code-insders --wait $MERGED
+	trustexitcode = true
+
+[color]
+	ui = auto
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+    branch = magenta
+
+[apply]
+	whitespace = fix
+
+[rerere]
+	enabled = true
+
+[help]
+    autocorrect = 1
+
+[submodule]
+	recurse = true
+

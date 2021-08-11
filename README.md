@@ -152,7 +152,7 @@ powershell.exe -Command 'start https://github.com/settings/ssh/new'
 [core]
 	editor = code-insiders --wait --new-window
 	excludesfile = ~/.gitignore_global
-  attributesfile = ~/.gitattributes_global
+  	attributesfile = ~/.gitattributes_global
 [diff]
 	tool = code-insiders
 	renames = copies
@@ -160,7 +160,6 @@ powershell.exe -Command 'start https://github.com/settings/ssh/new'
 	cmd = code-insiders --wait --diff $LOCAL $REMOTE
 [merge]
 	tool = code-insiders
-	# Include summaries of merged commits in newly created merge commit messages
 	log = true
 [mergetool "code-insiders"]
 	cmd = code-insders --wait $MERGED
@@ -168,19 +167,19 @@ powershell.exe -Command 'start https://github.com/settings/ssh/new'
 [color]
 	ui = auto
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+    	current = yellow reverse
+    	local = yellow
+    	remote = green
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
+    	meta = yellow bold
+    	frag = magenta bold
+    	old = red bold
+    	new = green bold
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
-    branch = magenta
+    	added = yellow
+    	changed = green
+    	untracked = cyan
+    	branch = magenta
 [help]
 	autocorrect = 1
 [apply]

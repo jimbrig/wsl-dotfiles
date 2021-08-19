@@ -1,0 +1,15 @@
+# https://github.com/Konfekt/xclip-xsel-WSL
+
+# clone repo into ~/downloads and extract commands into ~/bin:
+mkdir ~/downloads
+cd ~/downloads
+git clone https://github.com/Konfekt/xclip-xsel-WSL
+mkdir --parents ~/bin
+cp ~/Downloads/xclip-xsel-WSL/{clip.sh,xclip,xsel} ~/bin
+
+# fix permissions:
+chmod a+x ~/bin/clip.sh
+
+# add ~/bin to $PATH (for ZHK change to ~/.zshenv):
+echo '[ -z ${WSLENV+x} ] || export PATH="${PATH:+"$PATH:"}$HOME/bin"' >> ~/.profile
+
